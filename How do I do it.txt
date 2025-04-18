@@ -1,0 +1,104 @@
+Ben Nasıl Yaparım?
+
+Gerekli Dosyalar:
+
+- ngrok
+- php
+- web sayfası için gerekli dosyalar (örnek: index.html, script.js, style.css)
+
+
+1. Adım: PHP indir, klasöre çıkar ve dosya yolunu kopyala (örnek: C:\php)
+
+2. Adım: Ortam Değişkenine PHP Yolunu Ekle
+   - Ayarlar > Sistem > Hakkında > Gelişmiş sistem ayarları > Gelişmiş sekmesi
+   - Sağ alt kısımdan “Ortam Değişkenleri”ne tıkla
+   - Sistem değişkenleri bölümünde "Path" kısmını bul > Düzenle
+   - Yeni satır ekle ve PHP klasör yolunu yapıştır (örnek: C:\php)
+
+3. Adım: PHP Kurulumunu Kontrol Et
+   - CMD aç
+   - php -v komutunu yaz
+   - PHP sürümü görünüyorsa kurulum tamamdır
+
+4. Adım: Web Dosyalarını Hazırla
+   - index.html, style.css, script.js gibi dosyaları aynı klasöre koy
+   - Eğer PHP kodu varsa index.php dosyası da olabilir
+
+5. Adım: Sunucuyu Başlat
+   - CMD aç
+   - cd komutuyla web dosyalarının olduğu klasöre git (örnek: cd C:\Users\kullanıcı_adı\Desktop\site)
+   - php -S localhost:9191 komutunu yaz
+
+6. Adım: Ngrok ile Siteyi Yayınla
+   - ngrok.exe dosyasını çalıştır (yönetici olarak önerilir)
+   - CMD aç ve şu komutu yaz: ngrok http (php portu ile aynı olmalı)
+   - Sana verilen https://... bağlantısıyla siteni dışarıya açabilirsin
+
+Artık siten hazır! Tarayıcıdan veya telefondan test edebilirsin.
+
+
+İNG
+
+How Do I Do It?
+
+Required Files:
+
+- ngrok
+- php
+- Necessary web files (e.g., index.html, script.js, style.css)
+
+Step 1: Download PHP, extract it, and copy the file path (e.g., C:\php)
+
+Step 2: Add the PHP path to the Environment Variables
+   - Go to Settings > System > About > Advanced system settings > Advanced tab
+   - Click on “Environment Variables” at the bottom right
+   - In the system variables section, find "Path" > Edit
+   - Add a new line and paste the PHP folder path (e.g., C:\php)
+
+Step 3: Check PHP Installation
+   - Open CMD
+   - Type `php -v`
+   - If the PHP version appears, the installation is complete
+
+Step 4: Prepare the Web Files
+   - Place files like index.html, style.css, script.js in the same folder
+   - If PHP code is present, there may also be an index.php file
+
+Step 5: Start the Server
+   - Open CMD
+   - Use the `cd` command to navigate to the folder with the web files (e.g., `cd C:\Users\username\Desktop\site`)
+   - Type `php -S localhost:9191` to start the server
+
+Step 6: Publish the Site with Ngrok
+   - Run ngrok.exe (it's recommended to run as administrator)
+   - Open CMD and type: `ngrok http (same port as PHP)`
+   - You can open your site to the outside world with the given https://... link
+
+Now your site is ready! You can test it from a browser or a mobile device.
+
+
+If the PHP version appears, the installation is complete
+
+Step 4: Prepare the Web Files
+
+Place files like index.html, style.css, script.js in the same folder
+
+If PHP code is present, there may also be an index.php file
+
+Step 5: Start the Server
+
+Open CMD
+
+Use the cd command to navigate to the folder with the web files (e.g., cd C:\Users\username\Desktop\site)
+
+Type php -S localhost:9191 to start the server
+
+Step 6: Publish the Site with Ngrok
+
+Run ngrok.exe (it's recommended to run as administrator)
+
+Open CMD and type: ngrok http (same port as PHP)
+
+You can open your site to the outside world with the given https://... link
+
+Now your site is ready! You can test it from a browser or a mobile device.
