@@ -22,6 +22,7 @@ class serpense_otomasyon:
         with open("ngrok_token.txt", "w") as f:
             f.write(self.ngrok_token)
             print(Fore.LIGHTGREEN_EX + "✅ Token başarıyla kaydedildi!")
+            print(Fore.RED + "Programı yeniden başlat!")
             self.ngrok_baslatma()
 
     def dosya_kontrol(self):
